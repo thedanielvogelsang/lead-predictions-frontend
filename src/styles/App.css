@@ -1,0 +1,224 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  border: 2px solid;
+  border-color: #09d3ac;
+}
+
+.App-body {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+.App-forms {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: calc(10px + 1.5vmin);
+  width: 100vw;
+  /* padding-top: 5%;
+  padding-bottom: 10%; */
+}
+
+.App-forms h3{
+  color: #495057;
+  background-color: #09d3ac;
+  height: 60px;
+  padding-top: 30px;
+  opacity: 0.7;
+  width: 100%;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.btn {
+  opacity: 0.5;
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  margin-top: 20px;
+  width: 200px;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-primary{
+  color: #282c34;
+  background-color: #09d3ac;
+  border-color: #6c757d;
+  opacity: 0.5;
+}
+
+.btn-primary.false{
+  display: none;
+}
+
+.form-div:hover {
+  border: 1px solid #fff;
+  border-radius: 5%;
+}
+
+.returnData:hover {
+  border: 1px solid #fff;
+  border-radius: 5%;
+}
+
+.form-div:hover button.btn{
+  opacity: 1.0
+}
+
+.returnData:hover button.btn{
+  opacity: 1.0
+}
+
+.form-div:hover h3 {
+  opacity: 1.0
+}
+
+.returnData:hover h3{
+  opacity: 1.0
+}
+
+form{
+  display: block;
+  margin-top: 0em;
+}
+
+.form-div{
+  /* position: relative; */
+  padding: 1em 1em 1em;
+  /* border: 1px solid #d8d8d8; */
+  margin: 1.5rem 0 0;
+  width: 80%;
+  max-width: 600px;
+}
+
+.form-group{
+  margin-bottom: 1rem;
+}
+
+.form-control{
+  display: block;
+  width: 95%;
+  height: calc(1em + 0.55rem + 2px);
+  padding: 0.275rem 0.55rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+#numUsers {
+  height: 80px;
+}
+
+option {
+  height: 1.1em;
+}
+
+p.confidence-score {
+  margin: 0;
+  font-size: 0.6em;
+  padding-left: 14px;
+  margin-bottom: 10px;
+}
+
+span.predictionVal {
+  font-size: 1.2em;
+  color: #09d3ac;
+}
+
+.returnData{
+  /* display: block; */
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: 834px;
+  padding: 1em 1em 1em;
+  /* border: 1px solid #d8d8d8; */
+  margin: 1.5rem 0 0;
+  /* border: 1px solid #ced4da; */
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  opacity: 1.0;
+  z-index: 3;
+}
+
+.returnData:hover {
+  opacity: 1.0
+}
+
+.predictionDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 0 1em;
+  height: 60%;
+}
+
+.predictionDiv:hover .returnData-color{
+  opacity: 1.0;
+}
+
+@media (max-width: 525px) {
+  .App-forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    width: 100vw;
+    /* padding-top: 5%;
+    padding-bottom: 10%; */
+  }
+  .returnData{
+    /* display: block; */
+    width: 80%;
+    height: 800px;
+    /* border: 1px solid #d8d8d8; */
+    margin: 0;
+    /* border: 1px solid #ced4da; */
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    opacity: 1.0;
+  }
+  .returnData h3 {
+    margin: 0;
+  }
+}
